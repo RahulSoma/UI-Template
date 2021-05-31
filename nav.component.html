@@ -1,0 +1,38 @@
+<mat-toolbar>
+    <button mat-icon-button class="toolbarMenu" (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span class="toolbarMenu">UI Template</span>
+</mat-toolbar>
+
+<mat-drawer-container>
+    <mat-drawer #drawer opened mode="side" class="mat-drawer-background">
+        <mat-nav-list>
+            <a mat-list-item routerLink='home' class="toolbarMenu">
+                <mat-icon>home</mat-icon>
+                <span class="menuItems">Home</span>
+            </a>
+            <mat-divider></mat-divider>
+            <a mat-list-item routerLink='sqlinput' class="toolbarMenu">
+                <mat-icon>storage</mat-icon><span class="menuItems">MS SQL</span>
+            </a>
+            <mat-divider></mat-divider>
+            <a mat-list-item routerLink='oracle' class="toolbarMenu">
+                <mat-icon>file_copy</mat-icon><span class="menuItems">Oracle</span>
+            </a>
+            <mat-divider></mat-divider>
+            <a mat-list-item routerLink='help' class="toolbarMenu">
+                <mat-icon>help</mat-icon><span class="menuItems">Help</span>
+            </a>
+        </mat-nav-list>
+
+    </mat-drawer>
+    <mat-drawer-content>
+        <div class="header headertext mat-elevation-z2">
+            <span>HEADING</span>
+        </div>
+        <div>
+            <router-outlet></router-outlet>
+        </div>
+    </mat-drawer-content>
+</mat-drawer-container>

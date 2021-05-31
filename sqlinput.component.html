@@ -1,0 +1,85 @@
+<div class="main">
+    <div>
+        <!-- input -->
+        <div>
+            <mat-accordion>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title class="headertext">
+                            Source Details
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <form>
+                        <span>Source 1</span>
+                        <mat-form-field appearance="outline" class="input">
+                            <mat-label>DSN Name</mat-label>
+                            <input name="dsnname" ngModel matInput placeholder="Placeholder">
+                            <mat-hint>Hint</mat-hint>
+                        </mat-form-field>
+
+                        <mat-form-field appearance="outline" class="input">
+                            <mat-label>Port #</mat-label>
+                            <input name="port" ngModel matInput placeholder="Placeholder">
+                            <mat-hint>Hint</mat-hint>
+                        </mat-form-field>
+
+                        <mat-form-field appearance="outline" class="input">
+                            <mat-label>DB Name</mat-label>
+                            <input name="dbname" ngModel matInput placeholder="Placeholder">
+                            <mat-hint>Hint</mat-hint>
+                        </mat-form-field>
+
+                        <mat-form-field appearance="outline" class="input">
+                            <mat-label>User ID</mat-label>
+                            <input name="userid" ngModel matInput placeholder="Placeholder">
+                            <mat-hint>Hint</mat-hint>
+                        </mat-form-field>
+                        <mat-form-field appearance="outline" class="input">
+                            <mat-label>Password</mat-label>
+                            <input name="password" ngModel matInput placeholder="Placeholder">
+                            <mat-hint>Hint</mat-hint>
+                        </mat-form-field>
+                        <br><br>
+                        <span>Source 2</span>
+                        <mat-form-field appearance="outline" class="input">
+                            <mat-label>DSN Name</mat-label>
+                            <input name="dsnname" ngModel matInput placeholder="Placeholder">
+                            <mat-hint>Hint</mat-hint>
+                        </mat-form-field>
+
+                        <mat-form-field appearance="outline" class="input">
+                            <mat-label>Port #</mat-label>
+                            <input name="port" ngModel matInput placeholder="Placeholder">
+                            <mat-hint>Hint</mat-hint>
+                        </mat-form-field>
+
+                        <mat-form-field appearance="outline" class="input">
+                            <mat-label>DB Name</mat-label>
+                            <input name="dbname" ngModel matInput placeholder="Placeholder">
+                            <mat-hint>Hint</mat-hint>
+                        </mat-form-field>
+
+                        <mat-form-field appearance="outline" class="input">
+                            <mat-label>User ID</mat-label>
+                            <input name="userid" ngModel matInput placeholder="Placeholder">
+                            <mat-hint>Hint</mat-hint>
+                        </mat-form-field>
+                        <mat-form-field appearance="outline" class="input">
+                            <mat-label>Password</mat-label>
+                            <input name="password" ngModel matInput placeholder="Placeholder">
+                            <mat-hint>Hint</mat-hint>
+                        </mat-form-field>
+                        <br><br>
+                        <button mat-raised-button color="warn">Reconcile</button>
+                    </form>
+
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>
+
+    </div>
+    <div>
+        <!-- output -->
+        <app-sqloutput></app-sqloutput>
+    </div>
+</div>

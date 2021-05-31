@@ -1,0 +1,19 @@
+.main
+{
+    margin: 10px;
+    background-color:#E9ECEF;
+    height: 100vh;
+    border-radius: 5px;
+}
+
+.input{
+    margin-left: 10px;
+}
+
+.headertext {
+    color: #007bff;
+    text-decoration: none;
+    font-size: larger;
+    //background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
